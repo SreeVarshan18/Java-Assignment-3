@@ -6,9 +6,13 @@ public class development {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        Integer cel,far;
+        Integer far,cel;
         System.out.println("Enter Fahrenheit ");
         far = input.nextInt();
+
+        Conversion obj = new Conversion();
+        cel = obj.fartocel(far);
+        System.out.println(cel);
 
     }
 }
